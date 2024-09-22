@@ -7,9 +7,13 @@ This script uses the Dropbox API to download all files from a specified folder i
 # Import required modules
 import dropbox
 import os
+from dotenv import load_dotenv
 
-ACCESS_TOKEN = 'sl.B9W4uuT5KWY69sppB7udVuS-iXa4OmpsHo151h_xzLUDlmVkX4wVfBoq75aKLYTA67vV6o97DgHwQRdDX8_3z4utmrizKb9BHZtiNfJP5X-ACY-g1G05ld8S5cpbBufb3WCMuyLo74qH38Gq-bP5r50'
+# Load environment variables from a .env file
+load_dotenv()
+ACCESS_TOKEN = os.getenv('ACCESS_TOKEN') 
 
+# Initialize Dropbox client
 dbx = dropbox.Dropbox(ACCESS_TOKEN)
 
 def download_folder(dropbox_folder_path, local_folder_path):
@@ -48,7 +52,7 @@ def download_folder(dropbox_folder_path, local_folder_path):
         print(f"Error downloading folder: {e}")
 
 # Define the Dropbox folder and local folder paths
-dropbox_folder_path = '/payload'  # Path to the "payload" folder in Dropbox
+dropbox_folder_path = '/payload'  # Path to the source folder in Dropbox from where the file are to be downloaded
 local_folder_path = "."      # Local folder to save files
 
 download_folder(dropbox_folder_path, local_folder_path)

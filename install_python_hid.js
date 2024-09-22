@@ -1,3 +1,7 @@
+// Aashish Aryal
+// A HID script to install Python 3.12.6 on target machine
+// This script is to be run from attacker's machine on target machine
+
 layout("US")
 delay(500)
 press("GUI r") // Open Run dialog
